@@ -10,11 +10,13 @@ TweenMax.to('body', 0.8, {opacity:1, onComplete:animationsStart});
 function animationsStart() {
     TweenMax.to('.hero__header', 0.8, {y: 0});
     TweenMax.to('.hero__headings', 2, {opacity: 1, delay: 0.2});
+    TweenMax.to('.hero__title', 2, {opacity: 1, delay: 0.2});
     TweenMax.to('.hero__more', 1.5, {opacity: 1, delay: 1});
     if($(window).width() > 1024) {
-        TweenMax.staggerTo('.hero__main-nav-link', 1.8, {opacity: 1, delay: 0.5}, 0.08);
+        TweenMax.staggerTo('.hero__main-nav-link', 0.8, {opacity: 1}, 0.08);
     } else {
-        TweenMax.to('.hero__main-nav', 0.5, {opacity: 1, delay: 0.6});
+        TweenMax.to('.hero__main-nav_general', 0.8, {y: 0});
+        TweenMax.to('.hero__main-nav_home', 0.8, {y: 36});
     }
 }
 
@@ -30,12 +32,12 @@ if($(window).width() < 740) {
 
 var controller = new ScrollMagic.Controller();
 
-var revealImages = document.getElementsByClassName("home-content__img-wrap");
+var revealImages = document.getElementsByClassName("img-animation");
     for (var i=0; i<revealImages.length; i++) {
         new ScrollMagic.Scene({
             triggerElement: revealImages[i],
             offset: 0,
-            triggerHook: 0.65,
+            triggerHook: 0.85,
         })
     .setClassToggle(revealImages[i], "_visible")
     .addTo(controller);
