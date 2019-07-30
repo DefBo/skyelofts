@@ -77,7 +77,7 @@ if($(window).width() > 1024) {
         var bg = $(this).find(".bg");
 
         var parallax = TweenMax.from( bg, 1, {
-            y: '-50%',
+            y: '25%',
             ease: Power0.easeNone
         } );
 
