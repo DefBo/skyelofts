@@ -9,14 +9,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body>
+<body class="gallery-page">
 
 	<section class="hero slide">
 
-		<img src="img/sls-res-hero.jpg" alt="Residences Hero" class="hero__bg bg">
+		<img src="img/sls-gallery-hero.jpg" alt="Residences Hero" class="hero__bg bg">
 
 		<section class="hero__main">
 			<section class="hero__main-content">
@@ -27,10 +28,10 @@
 						<span class="hero__main-nav-btn-line"></span>
 					</button>
 					<div class="hero__main-nav-wrap">
-						<a href="residences.html" class="hero__main-nav-link _gen _gen-1 _active">Residences</a>
+						<a href="residences.html" class="hero__main-nav-link _gen _gen-1">Residences</a>
 						<a href="amenities.html" class="hero__main-nav-link _gen _gen-2">Amenities</a>
 						<a href="availability.html" class="hero__main-nav-link _gen _gen-3">Availability</a>
-						<a href="gallery.html" class="hero__main-nav-link _gen _gen-4">Gallery</a>
+						<a href="gallery.html" class="hero__main-nav-link _gen _gen-4 _active">Gallery</a>
 						<a href="index.html" class="hero__main-nav-link _logo">
 							<img src="img/logo.svg" alt="Logo" class="hero__main-nav-logo">
 						</a>
@@ -46,66 +47,30 @@
 			</section>
 		</section>
 
-		<h1 class="hero__title">Resi<span class="hero__title-underline">de</span>nces</h1>
+		<h1 class="hero__title">Ga<span class="hero__title-underline">ll</span>ery</h1>
 
 	</section>
 
-	<section class="high-life">
-
-		<section class="high-life__text">
-			<div class="container">
-				<h2 class="home-content__title">Live the <span class="home-content__title-underlined">High Life</span></h2>
-				<section class="high-life__description">
-					<div class="high-life__description-col">
-						<p class="high-life__item fade-in">
-							With lavish room to grow and exquisite space in which to breathe. This is the Skye life.
-						</p>
-					</div>
-					<div class="high-life__description-col">
-						<ul>
-							<li class="high-life__item fade-in">10ʼ CEILINGS</li>
-							<li class="high-life__item fade-in">OPEN KITCHEN FLOOR PLANS</li>
-							<li class="high-life__item fade-in">STAINLESS STEEL FRIGIDAIRE APPLIANCES</li>
-							<li class="high-life__item fade-in">QUARTZ COUNTERTOPS</li>
-							<li class="high-life__item fade-in">MOSAIC BACKSPLASHES</li>
-						</ul>
-					</div>
-					<div class="high-life__description-col">
-						<ul>
-							<li class="high-life__item fade-in">HARDWOOD PLANK FLOORING</li>
-							<li class="high-life__item fade-in">CENTRAL AIR</li>
-							<li class="high-life__item fade-in">HIGH-SPEED INTERNET & CABLE READY</li>
-							<li class="high-life__item fade-in">HIGH-EFFICIENCY BOSCH WASHER/DRYER</li>
-						</ul>
-					</div>
-				</section>
-			</div>
-		</section>
-
-		<section class="high-life__bg slide">
-			<img src="img/sls-res-1.jpg" alt="High Life Background" class="high-life__bg-img bg">
-		</section>
-
-	</section>
-
-	<section class="residence-gallery">
+	<section class="avail-table fade-in">
 		<div class="container">
-			<div class="residence-gallery__col">
-				<div class="residence-gallery__photo residence-gallery__photo-1 img-animation">
-					<img src="img/sls-res-2.jpg" alt="Residence Photo 1" class="residence-gallery__photo-img">
-				</div>
-				<div class="residence-gallery__photo residence-gallery__photo-3 img-animation">
-					<img src="img/sls-res-4.jpg" alt="Residence Photo 1" class="residence-gallery__photo-img">
+			<section class="avail-table__toggles">
+				<button class="avail-table__toggles-item _bordered">All</button>
+				<button class="avail-table__toggles-item">Recidences</button>
+				<button class="avail-table__toggles-item _bordered">Amenities</button>
+				<button class="avail-table__toggles-item _bordered">Neighborhood</button>
+			</section>
+
+			<div class="gallery">
+					<a class="gallery__item fade-in" data-fancybox="gallery" href="img/sls-gal-1.jpg"><img src="img/sls-gal-1.jpg"></a>
+					<a class="gallery__item fade-in" data-fancybox="gallery" href="img/sls-gal-4.jpg"><img src="img/sls-gal-4.jpg"></a>
+					<a class="gallery__item fade-in" data-fancybox="gallery" href="img/sls-gal-2.jpg"><img src="img/sls-gal-2.jpg"></a>
+					<a class="gallery__item fade-in" data-fancybox="gallery" href="img/sls-gal-5.jpg"><img src="img/sls-gal-5.jpg"></a>
+					<a class="gallery__item fade-in" data-fancybox="gallery" href="img/sls-gal-3.jpg"><img src="img/sls-gal-3.jpg"></a>
+					<a class="gallery__item fade-in" data-fancybox="gallery" href="img/sls-gal-6.jpg"><img src="img/sls-gal-6.jpg"></a>
 				</div>
 			</div>
-			<div class="residence-gallery__col">
-				<div class="residence-gallery__photo residence-gallery__photo-2 img-animation">
-					<img src="img/sls-res-3.jpg" alt="Residence Photo 1" class="residence-gallery__photo-img">
-				</div>
-				<div class="residence-gallery__photo residence-gallery__photo-4 img-animation">
-					<img src="img/sls-res-5.jpg" alt="Residence Photo 1" class="residence-gallery__photo-img">
-				</div>
-			</div>
+
+			<button class="avail-table__btn">Load more</button>
 		</div>
 	</section>
 
@@ -113,10 +78,10 @@
 		<div class="container">
 			<a href="#" class="nav-links__item">
 				<img src="img/left-arrow.svg" alt="Arrow Left" class="nav-links__item-icon _left">
-				<span>Gallery</span>
+				<span>Neighborhood</span>
 			</a>
 			<a href="#" class="nav-links__item">
-				<span>Amenities</span>
+				<span>Gallery</span>
 				<img src="img/right-arrow.svg" alt="Arrow Right" class="nav-links__item-icon _right">
 			</a>
 		</div>
